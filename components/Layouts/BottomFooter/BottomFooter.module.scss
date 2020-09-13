@@ -1,0 +1,49 @@
+.bottomFooter {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    max-width: 100vw !important;
+    padding: 20vmin !important;
+    padding-bottom: 5vmin !important;
+    grid-column: center-start / center-end;
+
+    .logos {
+        margin: 0 auto;
+        @supports (display: grid) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20vmin, 30vmin));
+            grid-gap: 3vmin;
+            align-content: center;
+            justify-content: center;
+        }
+
+        & > * {
+            justify-self: center;
+            align-self: center;
+            width: fit-content;
+        }
+
+        .notes_logo {
+            margin-bottom: -3vmin;
+            color: rgba(86, 189, 223, 0.87);
+            font-weight: 100;
+            font-size: calc(1rem + 6.5vmin);
+
+            &__end {
+                color: rgb(243, 241, 241);
+            }
+        }
+
+      
+    }
+
+    .copyright {
+        direction: ltr;
+        padding: 4vmin 1rem;
+        font-size: 2.5vmin;
+        font-weight: 100;
+        margin: 3vmin auto;
+        margin-top: 5vmin;
+        max-width: 90%;
+        width: fit-content;
+    }
+}

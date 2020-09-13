@@ -1,0 +1,39 @@
+.note {
+    background-color: rgba(7, 68, 104, 0.212);
+    min-width: calc(10vmin + 20rem);
+    @media (max-width: 600px) {
+        transform: scale(0.9);
+        justify-content: space-evenly !important;
+        &:hover {
+            transform: scale(0.9) !important;
+            background-color: rgba(7, 68, 104, 0.452);
+        }
+    }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.205);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: rgba(16, 78, 114, 0.795);
+    font-weight: 200;
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.02);
+        background-color: rgba(7, 68, 104, 0.452);
+    }
+
+    &__icon__delete {
+        color: rgba(6, 53, 85, 0.575);
+        opacity: 0;
+        transition: all 0.5s;
+        transform: scale(0);
+    }
+    &:hover {
+        .note__icon__delete {
+            transform: scale(1.1);
+            opacity: 1 !important;
+        }
+    }
+}

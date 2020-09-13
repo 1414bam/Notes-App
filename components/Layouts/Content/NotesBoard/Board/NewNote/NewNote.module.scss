@@ -1,0 +1,58 @@
+.input {
+    margin: 1rem auto !important;
+    margin-bottom: 3rem !important;
+    width: max-content !important;
+}
+
+.items {
+    position: relative;
+    min-height: 5rem;
+    padding: 0rem;
+    margin: 0 auto !important;
+}
+
+.itemsList{
+    text-align: end;
+    margin: 1rem auto 5rem auto;
+}
+
+.items_commands {
+    margin-top: 3rem;
+    margin: 0 auto;
+    color: rgba(16, 67, 109, 0.884);
+    cursor: pointer;
+    width: max-content !important;
+
+    .item_button {
+        margin: 0 auto;
+        margin-top: 2rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        color: rgb(16, 67, 109);
+        &:hover {
+            color: rgba(16, 67, 109, 0.548);
+        }
+    }
+
+    .icon_plus,
+    .icon_send {
+        margin-right: 1rem;
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+}
+
+.itemForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+        padding: 0 1rem !important;
+    }
+}

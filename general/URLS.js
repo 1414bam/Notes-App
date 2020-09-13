@@ -1,0 +1,1 @@
+export const NOTES_API = 'http://localhost:3000/api/notes';
